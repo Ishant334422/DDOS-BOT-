@@ -5,7 +5,7 @@ from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 import time
 
 # Define Admin ID
-ADMIN_ID = "6942423757"  # Replace with the actual Telegram user ID of the admin
+ADMIN_ID = "7823827516"  # Replace with the actual Telegram user ID of the admin
 
 # In-memory database to store user balances
 user_data = {}
@@ -14,7 +14,7 @@ start_time = time.time()  # Record bot's start time
 # Define the /start command
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     welcome_message = """
-❄️ *WELCOME TO @DEVILVIPDDOS ULTIMATE UDP FLOODER* ❄️
+❄️ *WELCOME TO @SMWTHUNDER ULTIMATE UDP FLOODER* ❄️
 
 🔥 Yeh bot apko deta hai hacking ke maidan mein asli mazza! 🔥
 
@@ -27,14 +27,14 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 Commands ka use karo aur commands ka pura list dekhne ke liye type karo: /help
 
 💬 *Queries or Issues?* 💬
-Contact Admin: @DEVILVIPDDOS
+Contact Admin: @SMWTHUNDER
 """
     await update.message.reply_text(welcome_message, parse_mode="Markdown")
 
 # Define the /help command
 async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     help_message = """
-🛠️ DEVIL VIP DDOS Bot Help Menu 🛠️
+🛠️ THUNDER VIP DDOS Bot Help Menu 🛠️
 
 🌟 Yahan hai sab kuch jo tumhe chahiye! 🌟
 
@@ -57,7 +57,7 @@ async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
 
 🚨 𝐈𝐦𝐩𝐨𝐫𝐭𝐚𝐧𝐭 𝐓𝐢𝐩𝐬: 🚨
 - BOT REPLY NAA DE ISKA MATLAB KOI AUR BNDA ATTACK LAGYA HAI SO WAIT.
-- Agar koi dikkat aaye toh admin ko contact karo: @DEVILVIPDDOS
+- Agar koi dikkat aaye toh admin ko contact karo: @SMWTHUNDER
 
 💥 Ab jao aur hacker banne ka natak shuru karo! 💥
 """
@@ -247,7 +247,7 @@ async def uptime(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
 # Main function to set up the bot
 def main():
-    app = ApplicationBuilder().token("7705637241:AAHd4I2cf2pwQbNmdL934X0MMmKzJXWL8ig").build()
+    app = ApplicationBuilder().token("7823827516:AAE8QEXYdrAG-zdnpH2l1nYl9DS2oftOMgA").build()
 
     app.add_handler(CommandHandler("start", start))
     app.add_handler(CommandHandler("help", help_command))
